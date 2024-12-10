@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('./flying-man-outside-cyberpunk-portrait.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: rgb(204, 124, 26); */
+}
+.stopwatch {
+    backdrop-filter: blur(10vh);
+    /* background-color: rgba(231, 195, 195, 0.8); */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    /* background-color: aqua; */
+    color: whitesmoke;
+}
+.stopwatch2{
+    backdrop-filter: blur(10vh);
+
+}
+.display {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.laps-container {
+    margin-top: 20px;
+}
+.laps {
+    height: 150px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.lap {
+    margin-bottom: 5px;
+}
